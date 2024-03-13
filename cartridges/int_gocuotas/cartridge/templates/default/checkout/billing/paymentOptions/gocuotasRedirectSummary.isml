@@ -1,5 +1,5 @@
 <div class="gocuotas-redirect-img">
-    <img src="${URLUtils.staticURL('/images/gocuotas-logo.svg')}" height="32"
+    <img src="${URLUtils.httpsStatic('/images/gocuotas-logo.png')}" height="32"
         alt="${Resource.msg('gocuotas.summary.img.label', 'gocuotas', null)}"
         title="${Resource.msg('gocuotas.summary.img.label', 'gocuotas', null)}" 
         style="margin: 10px 0px" />
