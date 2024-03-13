@@ -1,0 +1,7 @@
+<div class="tab-pane gocuotas-redirect-content" id="gocuotas-redirect-content" role="tabpanel">
+    <fieldset class="payment-form-fields">
+        <input type="hidden" class="form-control" name="${pdict.forms.billingForm.paymentMethod.htmlName}" value="GOCUOTAS_REDIRECT" />
+
+        <isinclude template="checkout/billing/gocuotasRedirectForm" />
+    </fieldset>
+</div>

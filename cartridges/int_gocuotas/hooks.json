@@ -1,0 +1,16 @@
+{
+    "hooks": [
+        {
+            "name": "app.payment.form.processor.gocuotas_redirect",
+            "script": "./cartridge/scripts/hooks/payment/processor/gocuotasRedirectFormProcessor"
+        },
+        {
+            "name": "app.payment.processor.gocuotas_redirect",
+            "script": "./cartridge/scripts/hooks/payment/processor/gocuotasRedirectProcessor"
+        },
+        {
+            "name": "app.post.auth",
+            "script": "./cartridge/scripts/hooks/postAuthorizationHandling.js"
+        }
+    ]
+}

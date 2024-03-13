@@ -1,0 +1,19 @@
+$gocuotas-color-1: #EE2A7B !default;
+
+.nav-link.gocuotas-redirect-tab.active {
+    border-bottom: 0.188em solid $gocuotas-color-1;
+}
+
+.gocuotas-box {
+    p {
+        font-family: var(--skin-body-font);
+        color: var(--skin-main-text-color-1);
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+
+        span {
+            color: $gocuotas-color-1;;
+        }
+    }
+}

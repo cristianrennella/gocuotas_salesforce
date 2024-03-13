@@ -1,0 +1,13 @@
+<isscript>
+    let assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('css/gocuotas.css');
+</isscript>
+
+<div class="gocuotas-box">
+    <p>
+        ${Resource.msg('gocuotas.redirect.form.content.1', 'gocuotas', null)}
+        <span>${Resource.msg('gocuotas.redirect.form.content.2', 'gocuotas', null)}</span>
+        ${Resource.msg('gocuotas.redirect.form.content.3', 'gocuotas', null)}
+        <span>${Resource.msg('gocuotas.redirect.form.content.4', 'gocuotas', null)}</span>
+    </p>
+</div>

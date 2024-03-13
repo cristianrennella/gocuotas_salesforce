@@ -1,0 +1,89 @@
+{
+    "step-types": {
+        "script-module-step" : [
+            {
+                "@type-id": "custom.Gocuotas.RefundOrders",
+                "@supports-parallel-execution": "false",
+                "@supports-site-context": "true",
+                "@supports-organization-context": "false",
+                "module": "int_gocuotas/cartridge/scripts/steps/refundOrders.js",
+                "function": "execute",
+                "transactional": "true",
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "OK"
+                        },
+                        {
+                            "@code": "NO_ORDERS_FOUND"
+                        },
+                        {
+                            "@code": "ERROR"
+                        }
+                    ]
+                }
+            },
+            {
+                "@type-id": "custom.Gocuotas.FindOrdersByDate",
+                "@supports-parallel-execution": "false",
+                "@supports-site-context": "true",
+                "@supports-organization-context": "false",
+                "module": "int_gocuotas/cartridge/scripts/steps/findOrdersByDate.js",
+                "function": "execute",
+                "transactional": "true",
+                "parameters": {
+                    "parameter": [
+                        {
+                            "@name": "untilMinutesAgo",
+                            "@type": "long",
+                            "@required": "true",
+                            "default-value": "60"
+                        },
+                        {
+                            "@name": "gmt",
+                            "@type": "long",
+                            "@required": "true",
+                            "default-value": "-3"
+                        }
+                    ]
+                },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "OK"
+                        },
+                        {
+                            "@code": "NO_ORDERS_FOUND"
+                        },
+                        {
+                            "@code": "ERROR"
+                        }
+                    ]
+                }
+            },
+            {
+                "@type-id": "custom.Gocuotas.UpdateOrders",
+                "@supports-parallel-execution": "false",
+                "@supports-site-context": "true",
+                "@supports-organization-context": "false",
+                "module": "int_gocuotas/cartridge/scripts/steps/updateOrders.js",
+                "function": "execute",
+                "transactional": "true",
+                "parameters": { },
+                "status-codes": {
+                    "status": [
+                        {
+                            "@code": "OK"
+                        },
+                        {
+                            "@code": "NO_ORDERS_FOUND"
+                        },
+                        {
+                            "@code": "ERROR"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

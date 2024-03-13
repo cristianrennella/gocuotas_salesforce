@@ -1,0 +1,6 @@
+<li class="nav-item" data-method-id="${paymentOption.ID}">
+    <a class="nav-link gocuotas-redirect-tab" data-toggle="tab" href="#gocuotas-redirect-content" role="tab">
+        <img class="gocuotas-redirect-option" src="${URLUtils.staticURL('/images/gocuotas-logo.svg')}" height="32"
+            alt="${paymentOption.name}" title="${paymentOption.name}" />
+    </a>
+</li>

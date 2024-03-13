@@ -1,0 +1,6 @@
+.eslintrc.js
+.gitignore
+webpack.config.js
+cartridges/int_gocuotas/cartridge/client/default/js/checkout/checkout.js
+cartridges/int_gocuotas/cartridge/static/*
+.vscode/*
