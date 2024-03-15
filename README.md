@@ -4,6 +4,6 @@
   </a>
 </p>
 
-# Sales Force - GOcuotas Cartridge
+# Salesforce - GOcuotas Cartridge
 
 With the official GOcuotas cartridge you can integrate our payment gateway quickly and easily. You will be able to benefit from our solution in a very short time.
